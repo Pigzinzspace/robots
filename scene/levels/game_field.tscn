@@ -1,3 +1,41 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource path="res://scene/levels/sprites/field.png" type="Texture" id=1]
+
+[node name="PanelContainer" type="PanelContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_horizontal_guides_": [ 392.0, 900.0, 510.0 ],
+"_edit_use_anchors_": false,
+"_edit_vertical_guides_": [ 1600.0, 191.0, 1410.0 ]
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1593.0
+margin_bottom = 893.0
+texture = ExtResource( 1 )
+stretch_mode = 1
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PoolVector2Array( 3, -70, -48, 949, 1690, 967, 1676, -71, -76, 0, 1600, 0, 1600, 900, 1, 901 )
+
+[node name="left_team" type="StaticBody2D" parent="."]
+position = Vector2( 178, 447 )
+rotation = 0.00409833
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="left_team"]
+position = Vector2( -51, -326 )
+rotation = -0.00614002
+polygon = PoolVector2Array( 40, 271, 39, 389, 62, 389, 62, 271 )
+
+[node name="right_team" type="StaticBody2D" parent="."]
+position = Vector2( 1422, 449 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="right_team"]
+position = Vector2( -57, -322 )
+polygon = PoolVector2Array( 45, 265, 45, 383, 67, 383, 67, 265 )
