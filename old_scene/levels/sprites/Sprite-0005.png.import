@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/robots-Sheet.png-ab12885150ecb6e14c58b2834b1a1d8c.stex"
+path="res://.import/Sprite-0005.png-41dad736bf49e57fe558e8ec18d83dea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scene/hockeyer/sprites/robots-Sheet.png"
-dest_files=[ "res://.import/robots-Sheet.png-ab12885150ecb6e14c58b2834b1a1d8c.stex" ]
+source_file="res://old_scene/levels/sprites/Sprite-0005.png"
+dest_files=[ "res://.import/Sprite-0005.png-41dad736bf49e57fe558e8ec18d83dea.stex" ]
 
 [params]
 
